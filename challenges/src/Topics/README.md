@@ -17,3 +17,10 @@ Create two nodes with the following features:
 
 
 ![Screenshot from 2022-09-15 14-56-44](https://user-images.githubusercontent.com/74921179/190422907-edb66a24-5a00-4f9f-a943-043f8352f9e4.png)
+
+
+#### Notes:
+
+Topics command line commands:
+
+![Screenshot from 2022-09-15 19-13-06](https://user-images.githubusercontent.com/74921179/190479018-9f656d99-4678-4796-b9b7-a059f51348bf.png)
