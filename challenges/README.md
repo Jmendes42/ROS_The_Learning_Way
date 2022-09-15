@@ -1,3 +1,3 @@
 ### Challenges folder
 
-Here is where the challenges proposed during the course are.
+All the challenges where made in C++ (src folder) and Python (script folder)
