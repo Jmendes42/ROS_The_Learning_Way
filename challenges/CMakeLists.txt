@@ -12,7 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   std_msgs
   std_srvs
-  challenge_msgs
+  msgs_srvs
 )
 
 ## System dependencies are found with CMake's conventions
@@ -138,37 +138,38 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/challenges_node.cpp)
 
 # TOPICS CHALLENGE #
-add_executable(Number_Publisher src/Topics/number_publisher.cpp)
+
+add_executable(Number_Publisher Topics/src/number_publisher.cpp)
 target_link_libraries(Number_Publisher ${catkin_LIBRARIES})
 
-add_executable(Number_Counter_Topic src/Topics/number_counter_topic.cpp)
+add_executable(Number_Counter_Topic Topics/src/number_counter_topic.cpp)
 target_link_libraries(Number_Counter_Topic ${catkin_LIBRARIES})
 
-add_executable(Number_Subscriber src/Topics/number_subscriber.cpp)
+add_executable(Number_Subscriber Topics/src/number_subscriber.cpp)
 target_link_libraries(Number_Subscriber ${catkin_LIBRARIES})
 # TOPICS CHALLENGE #
 
 # SERVICE CHALLENGES
-add_executable(Number_Counter_Service src/Services/number_counter_service.cpp)
+add_executable(Number_Counter_Service Services/src/number_counter_service.cpp)
 target_link_libraries(Number_Counter_Service ${catkin_LIBRARIES})
 
-add_executable(Number_Counter_Reset src/Services/number_counter_reset.cpp)
+add_executable(Number_Counter_Reset Services/src/number_counter_reset.cpp)
 target_link_libraries(Number_Counter_Reset ${catkin_LIBRARIES})
 # SERVICE CHALLENGES
 
 # CUSTOM MESSAGE AND SERVICE CHALENGES
-add_executable(Battery_Node src/Custom_Msgs_Srvs/battery_node.cpp)
+add_executable(Battery_Node Custom_Msgs_Srvs/src/battery_node.cpp)
 target_link_libraries(Battery_Node ${catkin_LIBRARIES})
 
-add_executable(Battery_Status src/Custom_Msgs_Srvs/battery_status_subscriber.cpp)
+add_executable(Battery_Status Custom_Msgs_Srvs/src/battery_status_subscriber.cpp)
 target_link_libraries(Battery_Status ${catkin_LIBRARIES})
 
-add_executable(Led_Panel src/Custom_Msgs_Srvs/led_panel.cpp)
+add_executable(Led_Panel Custom_Msgs_Srvs/src/led_panel.cpp)
 target_link_libraries(Led_Panel ${catkin_LIBRARIES})
 # CUSTOM MESSAGE AND SERVICE CHALENGES
 
 # PARAMETERS CHALLENGE
-add_executable(Number_Publisher_Param src/Parameters/number_publisher_param.cpp)
+add_executable(Number_Publisher_Param Parameters/src/number_publisher_param.cpp)
 target_link_libraries(Number_Publisher_Param ${catkin_LIBRARIES})
 
 
