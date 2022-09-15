@@ -18,4 +18,4 @@ Trough this course here's what I've learned:
 4. All of the challenges where made in Python and C++ 
 
 
-#### Here are the ROS packages of the proposed challenges thorough the course
+#### Here are the ROS packages of the challenges proposed thorough the course
