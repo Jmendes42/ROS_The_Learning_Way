@@ -1,0 +1,3 @@
+int64 battery_percentage
+bool battery_on
+string warn_message

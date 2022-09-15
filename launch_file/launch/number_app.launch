@@ -1,0 +1,8 @@
+<launch>
+
+	<param name="/number_publish_frequency" type="double" value="3.0" />
+	<param name="/number_to_publish" type="int" value="10" />
+
+	<node name="number_publisher_param" pkg="challenges" type="Number_Publisher_Param" />
+
+</launch>
