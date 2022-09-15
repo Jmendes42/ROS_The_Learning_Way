@@ -31,3 +31,9 @@ And on the `package.xml` file added:
 `<exec_depend>package_name</exec_depend>`
 
 ![Screenshot from 2022-09-15 17-37-09](https://user-images.githubusercontent.com/74921179/190459479-6e559aba-f2ec-4ea3-a748-0ecb4a3c8de8.png)
+
+Services command line commands:
+
+![Screenshot from 2022-09-15 19-14-15](https://user-images.githubusercontent.com/74921179/190479327-f55f58f4-f8e6-42cd-9b65-17a902fe56c6.png)
+
+
