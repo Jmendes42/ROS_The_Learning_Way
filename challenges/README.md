@@ -4,12 +4,8 @@ All the challenges where made in C++ (src folder) and Python (script folder)
 
 #### Notes:
 
-To add custom or standard packages dependencies add the folder name to `CMakeLists.txt` file:
+To create this package used the `catkin_create_pkg` with the dependencies `roscpp`, `rospy` and `std_msgs`
 
-![Screenshot from 2022-09-15 13-52-40](https://user-images.githubusercontent.com/74921179/190408553-0b625195-c16e-4c9e-93a3-1ff5250f5126.png)
+`catkin_create_pkg <package_name> <dependencies>`
 
-And to `package.xml` add:
-
-![Screenshot from 2022-09-15 14-00-56](https://user-images.githubusercontent.com/74921179/190410967-b5028a80-19d2-4f49-978d-37fad40d4e9d.png)
-
-`<depend>package_name</depend>` is the same as `<buildtool_depend>` + `<build_depend>` + `<exec_depend>`
+![Screenshot from 2022-09-15 17-28-46](https://user-images.githubusercontent.com/74921179/190457920-1b45c3c6-4cde-49bf-bd7c-88cf215567c1.png)
