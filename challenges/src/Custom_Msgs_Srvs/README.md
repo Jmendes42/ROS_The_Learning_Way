@@ -24,3 +24,7 @@ And to `package.xml` add:
 ![Screenshot from 2022-09-15 14-00-56](https://user-images.githubusercontent.com/74921179/190410967-b5028a80-19d2-4f49-978d-37fad40d4e9d.png)
 
 `<depend>package_name</depend>` is the same as `<buildtool_depend>` + `<build_depend>` + `<exec_depend>`
+
+Messages command line commands:
+
+![Screenshot from 2022-09-15 19-16-33](https://user-images.githubusercontent.com/74921179/190479783-49146535-bbb7-4fa4-b44e-883fe2bd469d.png)
