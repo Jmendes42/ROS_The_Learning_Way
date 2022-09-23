@@ -17,5 +17,6 @@ Trough this course, here's what I've learned:
 3. Command line tools for each ROS code functionality
 4. All the challenges were made in Python and C++ 
 
+![certificate_ROS](https://user-images.githubusercontent.com/74921179/191912051-bc16efe3-8740-4db8-9404-eb4543040600.jpg)
 
 #### Here are the ROS packages of the challenges proposed thorough the course
