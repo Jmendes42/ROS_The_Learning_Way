@@ -24,3 +24,8 @@ To specify libraries to link a library or executable target:
 `target_link_libraries(${PROJECT_NAME}_node ${catkin_LIBRARIES})`
 
 ![Screenshot from 2022-09-15 19-33-25](https://user-images.githubusercontent.com/74921179/190483365-f07e13d3-4616-4809-8f3c-6e17a68c434f.png)
+
+
+To create executables use the command ```catkin_make``` in catkin_ws folder
+
+![cmake](https://user-images.githubusercontent.com/74921179/193732112-72e952f0-499f-4d37-bbf1-d883d23124b4.png)
