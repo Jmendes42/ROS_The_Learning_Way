@@ -1,6 +1,6 @@
 #include "motion.hpp"
 
-void    Motion::move(double speed, double distance, bool isForward)
+void    Motion::_move(double speed, double distance, bool isForward)
 {
         geometry_msgs::Twist vel_msg;
 
@@ -16,7 +16,7 @@ void    Motion::move(double speed, double distance, bool isForward)
         ros::Rate loop_rate(100);
         while (current_distance < distance) {;
                 ROS_INFO("Turtlesim goes forward!");
-                velocity_publisher.publish(vel_msg);
+                _velocity_publisher.publish(vel_msg);
                 double t1 = ros::Time::now().toSec();
                 current_distance = speed * (t1-t0);
                 ros::spinOnce();
@@ -24,5 +24,5 @@ void    Motion::move(double speed, double distance, bool isForward)
         }
         ROS_INFO("Arrived!");
         vel_msg.linear.x = 0;
-        velocity_publisher.publish(vel_msg);
+        _velocity_publisher.publish(vel_msg);
 }
