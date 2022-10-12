@@ -117,18 +117,20 @@ catkin_package(
 ## Your package locations should be listed before other locations
 include_directories(
 # include
+  src/includes
   ${catkin_INCLUDE_DIRS}
 )
 
 ## Declare a C++ library
-# add_library(${PROJECT_NAME}
-#   src/${PROJECT_NAME}/movement.cpp
-# )
+# add_library(${PROJECT_NAME} src/${PROJECT_NAME}/movement.cpp)
+add_library(motion src/actions/move_straight.cpp)
+target_link_libraries(motion ${catkin_LIBRARIES})
 
 ## Add cmake target dependencies of the library
 ## as an example, code may need to be generated before libraries
 ## either from message generation or dynamic reconfigure
 # add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#add_dependencies(motion.hpp src/actions/move_straight.cpp ${catkin_EXPORTED_TARGETS})
 
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
@@ -136,7 +138,10 @@ include_directories(
 # add_executable(${PROJECT_NAME}_node src/movement_node.cpp)
 
 add_executable(turtlesim_move src/move_publisher.cpp)
-target_link_libraries(turtlesim_move ${catkin_LIBRARIES})
+target_link_libraries(turtlesim_move motion)
+
+#add_executable(turtlesim_move src/actions/move_straight.cpp)
+#target_link_libraries(turtlesim_move ${catkin_LIBRARIES})
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -147,6 +152,7 @@ target_link_libraries(turtlesim_move ${catkin_LIBRARIES})
 ## Add cmake target dependencies of the executable
 ## same as for the library above
 # add_dependencies(${PROJECT_NAME}_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+#add_dependencies(turtlesim_move src/actions/move_straight.cpp ${catkin_EXPORTED_TARGETS})
 
 ## Specify libraries to link a library or executable target against
 # target_link_libraries(${PROJECT_NAME}_node
