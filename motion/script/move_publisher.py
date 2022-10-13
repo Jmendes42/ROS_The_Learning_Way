@@ -4,6 +4,8 @@ import time
 import rospy
 from turtlesim.msg import Pose
 from geometry_msgs.msg import Twist
+
+import actions.rotation as rotate
 import actions.move_straight as move
 
 if __name__ == '__main__':
@@ -18,7 +20,14 @@ if __name__ == '__main__':
         pose_subscriber = rospy.Subscriber(position_topic, Pose, move.poseCallback)
         time.sleep(2)
 
-        move.move(velocity_publisher, 2.0, 2.5, False)
+        rotate.rotate(velocity_publisher, 30, 90, True)
+        move.move(velocity_publisher, 2.0, 2.5, True)
+        rotate.rotate(velocity_publisher, 30, 90, True)
+        move.move(velocity_publisher, 2.0, 2.5, True)
+        rotate.rotate(velocity_publisher, 30, 90, True)
+        move.move(velocity_publisher, 2.0, 2.5, True)
+        rotate.rotate(velocity_publisher, 30, 90, True)
+        move.move(velocity_publisher, 2.0, 2.5, True)
 
     except rospy.ROSInterruptException:
         rospy.loginfo("Node Terminated")
