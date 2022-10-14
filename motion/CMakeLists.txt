@@ -124,7 +124,7 @@ include_directories(
 ## Declare a C++ library
 # add_library(${PROJECT_NAME} src/${PROJECT_NAME}/movement.cpp)
 
-add_library(motion src/actions/move_straight.cpp)
+add_library(motion src/actions/movement.cpp)
 target_link_libraries(motion ${catkin_LIBRARIES})
 
 ## Add cmake target dependencies of the library
