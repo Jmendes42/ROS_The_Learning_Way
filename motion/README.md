@@ -14,6 +14,10 @@ For this, I used two different formulas to calculate the covered distance.
 
 ![Untitled ‑ Made with FlexClip(1)](https://user-images.githubusercontent.com/74921179/195650985-fdfd7237-bc41-4d4c-a59d-debb85829e14.gif)
 
+For the Python nodes, the inputs are in degrees, and are then converted to radians (ROS requires a radian value). For the C++ nodes, the input is directly in radians.
+
+What are radians? -> https://www.youtube.com/watch?v=cgPYLJ-s5II
+
 #### Notes:
 
 Use the Turtlesim simulator to test these topics.
