@@ -18,6 +18,12 @@ For the Python nodes, the inputs are in degrees, and are then converted to radia
 
 What are radians? -> https://www.youtube.com/watch?v=cgPYLJ-s5II
 
+#### Go To Goal Behavior
+
+![goToGoal](https://user-images.githubusercontent.com/74921179/196169767-b197ab76-20f7-46d5-b9ca-df14601ccd75.gif)
+
+Speed is always proportional to distance for a smooth ride
+
 #### Notes:
 
 Use the Turtlesim simulator to test these topics.
